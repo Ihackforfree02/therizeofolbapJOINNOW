@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rise of Olbap</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 4em;
+      text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+      animation: glitch 1.5s infinite;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 0 0 10px #0f0; }
+      20% { text-shadow: 2px 0 red; }
+      40% { text-shadow: -2px 0 blue; }
+      60% { text-shadow: 0 0 10px #0f0; }
+      80% { text-shadow: 1px 1px red, -1px -1px blue; }
+      100% { text-shadow: 0 0 10px #0f0; }
+    }
+
+    .button {
+      margin-top: 40px;
+      padding: 15px 30px;
+      font-size: 1.5em;
+      color: #0f0;
+      background: transparent;
+      border: 2px solid #0f0;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background: #0f0;
+      color: #000;
+    }
+
+    .terminal-text {
+      font-size: 1.2em;
+      margin-top: 20px;
+      animation: flicker 3s infinite alternate;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 1; }
+      50% { opacity: 0.8; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>RISE OF OLBAP</h1>
+  <p class="terminal-text">SYSTEM BREACH DETECTED...</p>
+  <a href="play.html"><button class="button">PLAY</button></a>
+</body>
+</html>
